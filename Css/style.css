@@ -33,12 +33,17 @@ header {
 .header .search-text {
 }
 
+.logo .Name_web {
+  padding-bottom: 20px;
+}
+
 .search-text .fa-magnifying-glass {
   color: black;
 }
 
 .cart .fa-cart-shopping {
   color: black;
+  font-size: 30px;
 }
 /* Menu - Navigation bar */
 .menu ul {
