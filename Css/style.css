@@ -58,6 +58,9 @@ a {
 .logo_menu {
   display: flex;
   align-items: center;
-  padding-right: 10px;
   color: black;
+}
+
+.Text-Menu {
+  padding-left: 10px;
 }
