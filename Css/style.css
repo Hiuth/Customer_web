@@ -10,46 +10,64 @@ body {
   font-family: arial;
 }
 /* Header */
-header {
+.header {
+  height: 120px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 190px;
-  color: white;
   background-color: #eb412f;
 }
 
-.header h1 {
-  text-transform: uppercase;
-  text-align: left;
-  padding-bottom: 2px;
-  font-weight: 400px;
+.left-selection {
 }
 
-.header h2 {
-  font-variant: small-caps;
-  /* text-align: ; */
-}
-.header .search-text {
-}
-
-.logo .Name_web {
-  padding-bottom: 20px;
+.middle-selection {
+  flex: 1;
+  margin-left: 155px;
+  margin-right: 100px;
+  max-width: 520px; /*giới hạn thanh tìm kiếm ở mức 300px*/
+  display: flex;
+  align-items: center;
 }
 
-.search-text .fa-magnifying-glass {
-  color: black;
+.right-selection {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 100px;
+  padding: 10px 20px;
 }
 
+.search-button {
+  height: 35px;
+  width: 35px;
+}
+
+.search-bar {
+  flex: 1;
+  height: 35px;
+  border: 1px solid gray;
+  margin-left: -1px;
+}
+.cart {
+}
 .cart .fa-cart-shopping {
-  color: black;
-  font-size: 30px;
+  font-size: 35px;
+}
+
+.text-header {
+  padding-right: 10px;
+  font-weight: 500;
+}
+.Logo_website {
+  height: 100px;
 }
 /* Menu - Navigation bar */
 .menu ul {
   display: flex;
   background-color: #f2ddbe;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   height: 60px;
   font-weight: 700;
