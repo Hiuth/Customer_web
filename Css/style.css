@@ -3,7 +3,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 60%;
 }
 body {
   font-size: 1.6rem;
@@ -17,6 +17,7 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: #eb412f;
+  width: 100%;
 }
 
 .left-selection {
@@ -85,4 +86,76 @@ a {
 
 .Text-Menu {
   padding-left: 10px;
+}
+/* Thân trang */
+.Text-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2ddbe;
+  width: calc(100% - 400px);
+  margin: 30px auto;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.product-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  width: calc(100% - 400px);
+  font-size: 15px;
+}
+.line {
+  margin-top: 20px;
+  border: 1px solid gray;
+  width: calc(90% - 39px);
+  height: 1px;
+  opacity: 40%;
+}
+.product-top-tilte {
+  border: 2px solid rgb(189, 187, 187);
+  padding: 10px 20px;
+  font-weight: 700;
+}
+
+.product-top-text {
+  margin-top: 12.5px;
+}
+/* Chân trang */
+
+footer {
+  background-color: #f2ddbe;
+  padding: 20px 0;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.footer-content div {
+  flex: 1;
+  margin: 0 10px;
+}
+.footer-content h3 {
+  margin-top: 0;
+}
+.footer-content a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+.footer-content img {
+  margin-right: 5px;
+}
+
+.footer-text-title {
+  font-weight: 700;
 }
