@@ -127,6 +127,37 @@ a {
   margin-top: 12.5px;
   padding-left: 10px;
 }
+
+/* Tạo lưới cho sản phẩm */
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 30px 0;
+}
+
+.product-name {
+  text-align: center;
+  line-height: 20px;
+}
+.product-name > a {
+  margin-bottom: 5px;
+}
+.product-name > p {
+  font-weight: 700;
+}
+
+.product-game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 30px 0;
+}
+
+.img-console {
+  width: 315px;
+}
+.img-game {
+  width: 248px;
+}
 /* Chân trang */
 
 footer {
