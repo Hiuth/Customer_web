@@ -35,9 +35,10 @@ body {
 .right-selection {
   display: flex;
   align-items: center;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 100px;
   padding: 10px 20px;
+  background-color: white;
 }
 
 .search-button {
@@ -88,13 +89,15 @@ a {
   padding-left: 10px;
 }
 /* Thân trang */
+.main-content {
+  width: calc(100% - 300px);
+  margin: 30px auto;
+}
 .Text-content {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f2ddbe;
-  width: calc(100% - 400px);
-  margin: 30px auto;
   height: 40px;
   font-size: 20px;
   font-weight: 700;
@@ -104,13 +107,13 @@ a {
   display: flex;
   justify-content: space-between;
   margin: 10px auto;
-  width: calc(100% - 400px);
   font-size: 15px;
 }
 .line {
+  display: flex;
+  flex: 2;
   margin-top: 20px;
   border: 1px solid gray;
-  width: calc(90% - 39px);
   height: 1px;
   opacity: 40%;
 }
@@ -122,6 +125,7 @@ a {
 
 .product-top-text {
   margin-top: 12.5px;
+  padding-left: 10px;
 }
 /* Chân trang */
 
@@ -132,6 +136,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 25px;
 }
 .footer-content {
   display: flex;
