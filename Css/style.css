@@ -3,7 +3,7 @@
 }
 
 html {
-  font-size: 60%;
+  font-size: 62.5%;
 }
 body {
   font-size: 1.6rem;
@@ -65,6 +65,12 @@ body {
   height: 100px;
 }
 /* Menu - Navigation bar */
+/* .menu {
+  position: fixed;
+  top: 120px;
+  left: 0px;
+  right: 0px;
+} */
 .menu ul {
   display: flex;
   background-color: #f2ddbe;
@@ -90,7 +96,7 @@ a {
 }
 /* Thân trang */
 .main-content {
-  width: calc(100% - 600px);
+  max-width: 1080px;
   margin: 30px auto;
 }
 .Text-content {
@@ -107,11 +113,11 @@ a {
   display: flex;
   justify-content: space-between;
   margin: 10px auto;
-  font-size: 15px;
+  font-size: 20px;
 }
 .line {
   display: flex;
-  flex: 2;
+  flex: 1;
   margin-top: 20px;
   border: 1px solid gray;
   height: 1px;
@@ -133,7 +139,10 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 30px 0;
+  column-gap: 15px;
+  position: static;
 }
+
 .product-img {
   margin-bottom: 10px;
 }
@@ -150,7 +159,6 @@ a {
 .product-name {
   text-align: center;
   line-height: 20px;
-  column-gap: 15px;
 }
 .product-name .name {
   font-size: smaller;
@@ -166,6 +174,12 @@ a {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   column-gap: 20px;
 }
+/* Hàm dùng để điều chỉnh sản phẩm hiện thị khi kích thước hiển thị nhỏ hơn kích thước dự kiến */
+@media (max-width: 900px) {
+  .product-game {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 
 .img-console {
   width: 100%;
@@ -173,7 +187,9 @@ a {
 .img-game {
   width: 100%;
 }
-
+.img-banner {
+  width: 100%;
+}
 .add-cart-button {
   margin-top: 10px;
   font-size: xx-small;
