@@ -115,6 +115,15 @@ a {
   color: black;
 }
 
+#toggle {
+  color: white;
+  text-align: left;
+  padding: 10px;
+  font-size: 25px;
+  display: none;
+  cursor: pointer;
+}
+
 /* Thân trang */
 .main-content {
   max-width: 1080px;

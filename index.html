@@ -30,6 +30,14 @@
     <title>2004'S Store</title>
   </head>
   <body>
+    <!-- js dùng cho menu-->
+    <script>
+      $(document).ready(function () {
+        $("#toggle").click(function () {
+          $("nav").slideToggle();
+        });
+      });
+    </script>
     <!-- Header -->
     <div class="header-wallpaper">
       <div class="header">
@@ -59,7 +67,7 @@
         </div>
       </div>
       <!-- Thanh điều hướng (menu) -->
-      <div class="toggle">
+      <div id="toggle">
         <!-- cái nút menu 3 gạch -->
         <i class="fa-solid fa-bars"></i>
       </div>
