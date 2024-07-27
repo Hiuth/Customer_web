@@ -10,17 +10,26 @@ body {
   font-family: arial;
 }
 /* Header */
-.header {
+.header-wallpaper {
   height: 120px;
-  display: flex;
+  background-color: #eb412f;
+  max-width: 100%;
+}
+.header {
+  /* display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-  background-color: #eb412f;
-  width: 100%;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0px auto;
+  padding: 10px 10px;
 }
 
 .left-selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .middle-selection {
@@ -30,15 +39,17 @@ body {
   max-width: 520px; /*giới hạn thanh tìm kiếm ở mức 300px*/
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .right-selection {
   display: flex;
   align-items: center;
-  border: 2px solid white;
+  justify-content: center;
+  /* border: 2px solid white;
   border-radius: 100px;
-  padding: 10px 20px;
-  background-color: white;
+  padding: 10px 20px; */
+  /* background-color: white; */
 }
 
 .search-button {
@@ -62,7 +73,7 @@ body {
   font-weight: 500;
 }
 .Logo_website {
-  height: 100px;
+  height: calc(120px - 20px);
 }
 /* Menu - Navigation bar */
 /* .menu {
@@ -172,6 +183,7 @@ a {
 .product-game {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 10px 0;
   column-gap: 20px;
 }
 

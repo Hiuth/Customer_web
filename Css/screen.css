@@ -16,6 +16,16 @@
   .main-content {
     width: 90%;
   }
+  .header {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+  .Logo_website {
+    height: calc(80px - 20px);
+  }
+  .name-wallpaper {
+    height: 70px;
+  }
 }
 /* Kích thước của tablet nhỏ */
 @media (min-width: 500px) and (max-width: 750px) {
@@ -40,5 +50,11 @@
   }
   .product-game {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .main-content {
+    width: 90%;
+  }
+  .product-top {
+    font-size: 18px;
   }
 }
