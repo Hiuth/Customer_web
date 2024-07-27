@@ -60,7 +60,7 @@
     transition: 0.5s;
     position: relative;
     top: 50px;
-    left: 35px;
+    right: 30px;
   }
   .right-selection {
     position: relative;
@@ -87,6 +87,7 @@
   }
   .search-bar {
     flex: 1;
+    width: 400px;
   }
 }
 
