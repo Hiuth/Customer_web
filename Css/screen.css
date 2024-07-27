@@ -1,0 +1,42 @@
+/* Hàm dùng để điều chỉnh sản phẩm hiện thị khi kích thước hiển thị nhỏ hơn kích thước dự kiến */
+/* Kích thước của điện thoại */
+@media (max-width: 480px) {
+  .product {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .main-content {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .product-game {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Kích thước của tablet nhỏ */
+@media (min-width: 500px) and (max-width: 750px) {
+  .product {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 750px) {
+  .product-game {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/* Kích thước tablet phổ phông */
+@media (min-width: 750px) and (max-width: 1024px) {
+  .product {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1024px) {
+  .product-game {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
