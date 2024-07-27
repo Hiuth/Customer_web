@@ -17,7 +17,7 @@
     width: 90%;
   }
   .header {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     max-width: 90%;
   }
   .Logo_website {
@@ -28,7 +28,7 @@
   }
 }
 /* Kích thước của tablet nhỏ */
-@media (min-width: 500px) and (max-width: 750px) {
+@media (min-width: 500px) and (max-width: 768px) {
   .product {
     grid-template-columns: 1fr 1fr;
   }
@@ -44,7 +44,7 @@
 }
 
 /* Kích thước tablet phổ phông */
-@media (min-width: 750px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .product {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -56,5 +56,19 @@
   }
   .product-top {
     font-size: 18px;
+  }
+}
+
+/* chuyển đổi thanh menu */
+@media (max-width: 920px) {
+  .main-menu {
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .header {
+  }
+
+  .Logo_website {
   }
 }

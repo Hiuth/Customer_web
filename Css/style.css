@@ -16,12 +16,12 @@ body {
   max-width: 100%;
 }
 .header {
-  /* display: flex;
+  display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center; */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  align-items: center;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
   margin: 0px auto;
   padding: 10px 10px;
 }
@@ -76,39 +76,49 @@ body {
   height: calc(120px - 20px);
 }
 /* Menu - Navigation bar */
-/* .menu {
-  position: fixed;
-  top: 120px;
-  left: 0px;
-  right: 0px;
-} */
-.menu ul {
-  display: flex;
+.menu-logo {
+  width: 35px;
+}
+nav {
   background-color: #f2ddbe;
-  justify-content: space-around;
-  align-items: center;
-  height: 60px;
-  font-weight: 700;
 }
 
+nav .main-menu li a {
+  display: block;
+  padding: 10px 20px;
+}
+
+nav .main-menu li:hover a {
+  background-color: #eb412f;
+  transition: 0.5s;
+}
+
+nav .main-menu li a span {
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+nav .main-menu li a i {
+  font-size: 20px;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+ul {
+  list-style-type: none;
+}
 a {
   text-decoration: none;
   color: black;
 }
 
-.logo_menu {
-  display: flex;
-  align-items: center;
-  color: black;
-}
-
-.Text-Menu {
-  padding-left: 10px;
-}
 /* Thân trang */
 .main-content {
   max-width: 1080px;
-  margin: 30px auto;
+  margin: 1000px auto;
 }
 .Text-content {
   display: flex;
@@ -211,6 +221,7 @@ a {
 .add-cart-button > a:hover {
   color: white;
   background-color: black;
+  transition: all 0.5s;
 }
 /* Chân trang */
 
