@@ -26,9 +26,10 @@
   .name-wallpaper {
     height: 70px;
   }
+  /* chuyển đổi thanh menu */
 }
 /* Kích thước của tablet nhỏ */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .product {
     grid-template-columns: 1fr 1fr;
   }
@@ -41,6 +42,7 @@
   .product-top {
     font-size: 15px;
   }
+  /* chuyển đổi thanh menu */
   .main-menu {
     flex-direction: column;
     justify-content: left;
@@ -62,20 +64,20 @@
   }
   .right-selection {
     position: relative;
-    left: 230px;
+    left: 200px;
     top: -55px;
   }
   .Logo_website {
-    transition: 0.5s;
+    /* transition: 0.5s; */
     height: 80px;
     position: relative;
-    left: 0px;
+    right: 30px;
     top: 20px;
   }
   nav {
     display: none;
     position: relative;
-    top: -80px;
+    top: -20px;
   }
   #toggle {
     display: inline-block;
@@ -84,6 +86,7 @@
     left: 10px;
   }
   .search-bar {
+    flex: 1;
   }
 }
 
@@ -101,10 +104,7 @@
   .product-top {
     font-size: 18px;
   }
-}
-
-/* chuyển đổi thanh menu */
-@media (min-width: 768px) and (max-width: 920px) {
+  /* chuyển đổi thanh menu */
   .main-menu {
     flex-direction: column;
     justify-content: left;
@@ -130,7 +130,7 @@
     right: 30px; */
   }
   .Logo_website {
-    /* transition: 0.5s; */
+    transition: 0.5s;
     height: 80px;
     position: relative;
     right: 200px;
@@ -146,4 +146,7 @@
     top: -115px;
     left: 10px;
   }
+}
+
+@media (max-width: 1025px) {
 }
