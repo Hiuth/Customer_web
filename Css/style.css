@@ -64,8 +64,25 @@ body {
   margin-left: -1px;
 }
 
-.cart .fa-cart-shopping {
-  font-size: 35px;
+.cart-wallpaper {
+  /* background-color: antiquewhite; */
+  height: 40px;
+  width: 150px;
+  border: 2px solid white;
+  border-radius: 100px;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.cart_wallpaper_2 {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 100px;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
 }
 
 .text-header {
@@ -127,7 +144,7 @@ a {
 /* Thân trang */
 .main-content {
   max-width: 1080px;
-  margin: 1000px auto;
+  margin: 100px auto;
 }
 .Text-content {
   display: flex;
