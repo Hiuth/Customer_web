@@ -146,6 +146,66 @@ a {
   max-width: 1080px;
   margin: 100px auto;
 }
+/* Tạo lưới cho phần quảng cáo đầu trang */
+.home-banner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "banner_1 banner_2 banner_3"
+    "banner_1 banner_4 banner_5"
+    "banner_6 banner_7 banner_8";
+  column-gap: 10px;
+  row-gap: 10px;
+  transition: 0.5s;
+}
+
+.img-banner {
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banner_1 {
+  grid-area: banner_1;
+  padding: 10px 10px;
+  box-shadow: 0 1px 1px 1px rgb(201, 200, 200);
+}
+
+.banner_2 {
+  grid-area: banner_2;
+  padding: 10px 10px;
+}
+
+.banner_3 {
+  grid-area: banner_3;
+  padding: 10px 10px;
+  box-shadow: 0 1px 1px 1px rgb(201, 200, 200);
+}
+
+.banner_4 {
+  grid-area: banner_4;
+  padding: 10px 10px;
+}
+
+.banner_5 {
+  grid-area: banner_5;
+  padding: 10px 10px;
+}
+.banner_6 {
+  grid-area: banner_6;
+  padding: 10px 10px;
+}
+
+.banner_7 {
+  grid-area: banner_7;
+  padding: 10px 10px;
+}
+.banner_8 {
+  grid-area: banner_8;
+  padding: 10px 10px;
+  box-shadow: 0 1px 1px 1px rgb(201, 200, 200);
+}
 .Text-content {
   display: flex;
   justify-content: center;
@@ -154,6 +214,7 @@ a {
   height: 40px;
   font-size: 20px;
   font-weight: 700;
+  margin-top: 40px;
 }
 
 .product-top {
@@ -229,9 +290,7 @@ a {
 .img-game {
   width: 100%;
 }
-.img-banner {
-  width: 100%;
-}
+
 .add-cart-button {
   margin-top: 10px;
   font-size: xx-small;
