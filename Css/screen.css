@@ -25,7 +25,7 @@
     height: calc(80px - 20px);
   }
   .name-wallpaper {
-    height: 70px;
+    height: 90px;
   }
   /* chuyển đổi thanh menu */
   .main-menu {
@@ -33,7 +33,7 @@
     justify-content: left;
   }
   .name-wallpaper {
-    height: 70px;
+    height: 90px;
   }
   .header-wallpaper {
     height: 180px;
