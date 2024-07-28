@@ -1,5 +1,5 @@
 /* Hàm dùng để điều chỉnh sản phẩm hiện thị khi kích thước hiển thị nhỏ hơn kích thước dự kiến */
-/* Kích thước của điện thoại */
+/*  điện thoại thuộc diện mini */
 @media (max-width: 399px) {
   .product {
     grid-template-columns: 1fr;
@@ -15,6 +15,7 @@
   }
   .main-content {
     width: 90%;
+    margin-top: 50px;
   }
   .header {
     grid-template-columns: 1fr 1fr 1fr;
@@ -129,6 +130,7 @@
     grid-area: banner_8;
   }
 }
+/* Điện thoại phổ thông */
 @media (min-width: 400px) and (max-width: 480px) {
   .product {
     grid-template-columns: 1fr;
