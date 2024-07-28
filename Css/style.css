@@ -261,8 +261,10 @@ footer {
   line-height: 25px;
 }
 .footer-content {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  justify-content: space-around; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   width: 80%;
 }
 .footer-content div {
@@ -285,4 +287,16 @@ footer {
 
 .footer-text-title {
   font-weight: 700;
+}
+
+.contact {
+  padding: 10px 0px;
+}
+
+.about {
+  padding: 10px 0px;
+}
+
+.follow-us {
+  padding: 10px 0px;
 }
